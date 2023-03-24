@@ -50,15 +50,3 @@ class AJAX {
         return AJAX.request('DELETE', url, null, headers);
     }
 }
-
-AJAX.get('https://jsonplaceholder.typicode.com/todos/1')
-    .then(data => console.log(data))
-    .catch(error => console.error(error));
-
-AJAX.post('https://jsonplaceholder.typicode.com/posts', {
-    title: 'foo',
-    body: 'bar',
-    userId: 1
-}).then(data => console.log(data))
-    .catch(error => console.error(error));
-
